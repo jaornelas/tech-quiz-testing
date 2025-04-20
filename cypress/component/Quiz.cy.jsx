@@ -18,7 +18,7 @@ it('should start the quiz and display the 1st question', () => {
     mount(<Quiz/>);
     cy.get('button').contains('Start Quiz').click();
     cy.get('.card').should('be.visible');
-    cy.get('h2').should('not.be.empty)')
+    cy.get('h2').should('not.be.empty)');
 })
 
 });
