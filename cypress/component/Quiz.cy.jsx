@@ -1,4 +1,4 @@
-import Quiz from "../../client/src/components/Quiz.tsx"
+import Quiz from "../../client/src/components/Quiz"
 import { mount } from 'cypress/react18'
 
 describe ('Quiz Component', () => {
