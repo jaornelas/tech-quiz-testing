@@ -1,4 +1,4 @@
-import Quiz from "../.,/client/src/components/Quiz"
+import Quiz from "../../client/src/components/Quiz.tsx"
 
 describe ('Quiz Component', () => {
     beforeEach(() => {
@@ -19,4 +19,5 @@ it('should start the quiz and display the 1st question', () => {
     cy.get('.card').should('be.visible');
     cy.get('h2').should('not.be.empty)')
 })
-})
+
+});
