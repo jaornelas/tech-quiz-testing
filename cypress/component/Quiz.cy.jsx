@@ -1,4 +1,5 @@
 import Quiz from "../../client/src/components/Quiz.tsx"
+import { mount } from 'cypress/react18'
 
 describe ('Quiz Component', () => {
     beforeEach(() => {
@@ -14,7 +15,7 @@ describe ('Quiz Component', () => {
     });
 
 it('should start the quiz and display the 1st question', () => {
-    cy.mount(<Quiz/>);
+    mount(<Quiz/>);
     cy.get('button').contains('Start Quiz').click();
     cy.get('.card').should('be.visible');
     cy.get('h2').should('not.be.empty)')
